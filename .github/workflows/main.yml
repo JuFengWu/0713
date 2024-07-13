@@ -8,12 +8,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - uses: actions/checkout@v2
-        - name: Install package
+        - name: Run send mail py
           run: |
-            pip3 install mediapipe
-        - name: Run test py
-          run: |
-            python3 test.py
+            python3 send_mail.py
         - name: Run test2 py
           run: |
             python3 test2.py
